@@ -1,0 +1,29 @@
+{
+	"webapp":{
+		"url":"http://www.way2automation.com/demo.html",
+		"redbusurl":"https://www.redbus.in/",
+		 "username" :"test",
+		 "password" : "test"
+	},
+	"webservice":{
+		"url":"http://divyayuvaraj:8080/job/yuva-automation/api/json?pretty=true",
+		 "username" :"yuvaraj",
+		 "password" : "yuvaraj"
+	},
+
+	"android-chrome-browser":{
+		 	"browserName": "chrome",
+  			"platformName": "Android",
+  			"automationName":"Appium",
+  			"deviceName": "emulator-5554",
+  			"newCommandTimeout": "60",
+  			"deviceReadyTimeout": "30"
+	},
+
+	"appium-server":{
+		 	"host": "localhost",
+  			"port": "4723"
+  	}
+	
+
+}

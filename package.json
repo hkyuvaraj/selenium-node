@@ -1,0 +1,26 @@
+{
+  "name": "seleniumframework",
+  "version": "3.0.0",
+  "description": "Building Automation framework",
+  "main": "index.js",
+  "scripts": {
+    "test-mobile": "node ./node_modules/cucumber/bin/cucumber.js -r features/step_definitions -r features/support --format=json:./logs/cucumber_report.json --tags @mobileweb",
+    "test-web": "node ./node_modules/cucumber/bin/cucumber.js -r features/step_definitions -r features/support --format=json:./logs/cucumber_report.json --tags @web"
+  },
+  "author": "Yuvaraj",
+  "license": "ISC",
+  "dependencies": {
+    "appium": "^1.5.2",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.3.0",
+    "chromedriver": "^2.21.2",
+    "config": "^1.20.1",
+    "cucumber": "^0.10.2",
+    "cucumber-html-report": "^0.2.9",
+    "log4js": "^0.6.36",
+    "node-rest-client": "^1.8.0",
+    "recordrtc": "^5.3.7",
+    "screen-capture-recorder": "^1.2.0",
+    "selenium-webdriver": "^2.53.2"
+    }
+}
