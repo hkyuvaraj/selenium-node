@@ -10,10 +10,8 @@ var Logger = log4js.getLogger();
 //var Logger = require(process.cwd() + '/config/Logging.js');
 
 var config = require('config');
-var RestClient = require('../../lib/RestClient');
+var restClient = require('../../lib/RestClient');
 
-
-var restClient;
 
 /*
 * Constructor for the JenkinsWS
@@ -31,7 +29,6 @@ function JenkinsWS(){
 */
 
 JenkinsWS.prototype.getJenkinsData = function(){
- var restClient = new RestClient();
  var resultToReturn;
  var auth = {};
  	 auth.user = config.get('webservice.username');

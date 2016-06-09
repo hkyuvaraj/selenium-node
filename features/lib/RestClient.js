@@ -70,4 +70,4 @@ RestClient.prototype.getWithAuth = function(getURL, authentication){
 
 };
 
-module.exports = RestClient;
+module.exports = new RestClient();
